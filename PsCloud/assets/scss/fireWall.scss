@@ -1,0 +1,107 @@
+@import "./media.scss";
+
+.fireWall {
+  padding: 19px 54px;
+  @include media("tablet-landscape-up") {
+    padding: 19px 10px;
+  }
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    color: #22232b;
+    font-weight: bold;
+  }
+  &__info {
+    display: flex;
+    column-gap: 55px;
+    padding-top: 20px;
+  }
+  &__price {
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #22232b;
+    font-weight: bold;
+  }
+  &__item {
+    width: 100%;
+    max-width: 360px;
+  }
+  &__subtitle {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    p {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: normal;
+    }
+  }
+}
+
+.selector {
+  display: flex;
+  align-items: center;
+
+  &__price {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #22232b;
+    font-weight: bold;
+    margin-left: 54px;
+  }
+
+  &__icon {
+    img {
+      width: 36px;
+      height: 36px;
+    }
+  }
+  &__wrapper {
+    position: relative;
+    .Ipmi {
+      width: 20px;
+      height: 16px;
+      position: absolute;
+      left: 120px;
+      bottom: 42px;
+    }
+    padding-left: 20px;
+    position: relative;
+    width: 100%;
+    h3 {
+      font-size: 11px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: normal;
+      position: absolute;
+      bottom: 39px;
+      left: 28px;
+      padding: 0px 5px;
+      background-color: rgb(255, 255, 255);
+    }
+    select {
+      width: 100%;
+      border-width: 1px;
+      border-color: rgb(189, 205, 214);
+      border-style: solid;
+      border-radius: 7px;
+      line-height: 1.125;
+      padding: 13px;
+    }
+  }
+
+  select {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../icons//caret.svg);
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) center;
+  }
+}

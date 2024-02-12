@@ -1,0 +1,48 @@
+@import "./media.scss";
+
+.footer {
+  margin: 19px 108px;
+  @include media("tablet-landscape-up") {
+    margin: 19px 18px;
+  }
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  &__sign {
+    font-size: 18;
+    font-family: "Open Sans", sans-serif;
+    color: #22232b;
+    font-weight: normal;
+  }
+  &__routes {
+    margin-top: 53px;
+    ul {
+      display: flex;
+      @include media("tablet-landscape-up") {
+        flex-direction: column;
+      }
+      column-gap: 15px;
+      li {
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
+  }
+  &__socials {
+    margin-top: 53px;
+    ul {
+      display: flex;
+      column-gap: 15px;
+      li {
+        padding: 14px;
+        border-radius: 10px;
+        background-color: rgb(237, 239, 244);
+        a {
+          img {
+            z-index: 10;
+          }
+        }
+      }
+    }
+  }
+}

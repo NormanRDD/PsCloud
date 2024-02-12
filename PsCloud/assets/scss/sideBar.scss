@@ -1,0 +1,86 @@
+@import "./media.scss";
+// Кнопка закрытия панели бургер оставлена для дальнейших изменений, в качестве прототипа
+.burger {
+  display: none;
+  @include media("tablet-landscape-up") {
+    display: block;
+    position: fixed;
+    overflow: scroll;
+    max-height: 100vh;
+  }
+}
+.sideBar {
+  position: fixed;
+  overflow: scroll;
+  max-height: 100vh;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  @include media("tablet-landscape-up") {
+    display: none;
+  }
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.overlay {
+  max-width: max-content;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0 0 0 / 56%);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: static;
+  overflow: scroll;
+  max-height: 100vh;
+  @include media("phone-only") {
+    width: 150%;
+  }
+  width: 100%;
+  text-align: center;
+}
+
+.overlay a {
+  color: black;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  left: 45px;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 36px;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 33px;
+  right: -40px;
+  font-size: 60px;
+}
+
+@media screen and (max-width: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}

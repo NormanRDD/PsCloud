@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/scss/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Статичная картина сайдбара, в макете отсутствуют слои -->
+      <div class="burger">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="overlay-content">
+            <img src="/assets/images/sideBar/menu.png" alt="" />
+          </div>
+        </div>
+
+        <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+          >&#9776;
+        </span>
+      </div>
+      <div class="sideBar">
+        <img src="/assets/images/sideBar/menu.png" alt="" />
+      </div>
+      <div class="basket">
+        <!-- Блок настроек сервера -->
+        <div class="server">
+          <h2>Сервер 1</h2>
+          <div class="server__components">
+            <div class="server__item">
+              <div class="selector">
+                <div class="selector__icon">
+                  <img src="./assets/icons/cpu.svg" alt="" />
+                </div>
+                <div class="selector__wrapper">
+                  <h3 class="selector__title">Процессор</h3>
+                  <select name="cpu">
+                    <option value="value1">Значение 1</option>
+                    <option value="value2" selected>
+                      2 x Intel Xeon ES-2620 v3 2.40/3 .20 Ггц (всего) 12 ядер ,
+                      24 потока
+                    </option>
+                    <option value="value1">Значение 3</option>
+                  </select>
+                </div>
+              </div>
+              <p class="selector__price">19 000 тг/мес</p>
+            </div>
+            <div class="server__item">
+              <div class="selector">
+                <div class="selector__icon">
+                  <img src="./assets/icons/ram.svg" alt="" />
+                </div>
+                <div class="selector__wrapper">
+                  <h3 class="selector__title">ОЗУ</h3>
+                  <select name="cpu">
+                    <option value="value1">Значение 1</option>
+                    <option value="value2" selected>32 Гб</option>
+                    <option value="value1">Значение 3</option>
+                  </select>
+                </div>
+              </div>
+              <p class="selector__price">19 000 тг/мес</p>
+            </div>
+            <div class="server__item">
+              <div class="selector">
+                <div class="selector__icon">
+                  <img src="./assets/icons/disk.svg" alt="" />
+                </div>
+                <div class="selector__wrapper">
+                  <h3 class="selector__title">Системный диск 1</h3>
+                  <select name="cpu">
+                    <option value="value1">Значение 1</option>
+                    <option value="value2" selected>SSD 120 Гб SATA</option>
+                    <option value="value1">Значение 3</option>
+                  </select>
+                </div>
+              </div>
+              <p class="selector__price">19 000 тг/мес</p>
+            </div>
+            <div class="server__item">
+              <div class="selector">
+                <div class="selector__icon">
+                  <img src="./assets/icons/disk.svg" alt="" />
+                </div>
+                <div class="selector__wrapper">
+                  <h3 class="selector__title">Диск 2</h3>
+                  <select name="cpu">
+                    <option value="value1">Значение 1</option>
+                    <option value="value2" selected>Нет</option>
+                    <option value="value1">Значение 3</option>
+                  </select>
+                </div>
+              </div>
+              <p class="selector__price">19 000 тг/мес</p>
+            </div>
+            <div class="server__item">
+              <div class="selector">
+                <div class="selector__icon">
+                  <img src="./assets/icons/disk.svg" alt="" />
+                </div>
+                <div class="selector__wrapper">
+                  <h3 class="selector__title">Диск 3</h3>
+                  <select name="cpu">
+                    <option value="value1">Значение 1</option>
+                    <option value="value2" selected>Нет</option>
+                    <option value="value1">Значение 3</option>
+                  </select>
+                </div>
+              </div>
+              <p class="selector__price">19 000 тг/мес</p>
+            </div>
+          </div>
+          <a class="server__addDisk" href="#">Добавить ещё дисков</a>
+          <div class="server__network">
+            <div class="server__item">
+              <div class="selector">
+                <div class="selector__icon">
+                  <img src="./assets/icons/port.svg" alt="" />
+                </div>
+                <div class="selector__wrapper">
+                  <h3 class="selector__title">Сетевой порт</h3>
+                  <select name="cpu">
+                    <option value="value1">Значение 1</option>
+                    <option value="value2" selected>1 Gbit/s</option>
+                    <option value="value1">Значение 3</option>
+                  </select>
+                </div>
+              </div>
+              <p class="selector__price">19 000 тг/мес</p>
+            </div>
+            <div class="server__item">
+              <div class="selector">
+                <div class="selector__icon">
+                  <img src="./assets/icons/port.svg" alt="" />
+                </div>
+                <div class="selector__wrapper">
+                  <h3 class="selector__title">Сетевой порт</h3>
+                  <select name="cpu">
+                    <option value="value1">Значение 1</option>
+                    <option value="value2" selected>1 Gbit/s</option>
+                    <option value="value1">Значение 3</option>
+                  </select>
+                </div>
+              </div>
+              <p class="selector__price">19 000 тг/мес</p>
+            </div>
+            <div class="server__item">
+              <div class="selector">
+                <div class="selector__icon">
+                  <img src="./assets/icons/port.svg" alt="" />
+                </div>
+                <div class="selector__wrapper">
+                  <h3 class="selector__title">Raid 12Gbit/s</h3>
+                  <select name="cpu">
+                    <option value="value1">Значение 1</option>
+                    <option value="value2" selected>Нет</option>
+                    <option value="value1">Значение 3</option>
+                  </select>
+                </div>
+              </div>
+              <p class="selector__price">0 тг/мес</p>
+            </div>
+            <div class="server__item">
+              <div class="selector">
+                <div class="selector__icon">
+                  <img src="./assets/icons/port.svg" alt="" />
+                </div>
+                <div class="selector__wrapper">
+                  <h3 class="selector__title">IPMI</h3>
+                  <div class="Ipmi">
+                    <img src="./assets//icons//questionMark.svg" alt="" />
+                  </div>
+                  <select name="cpu">
+                    <option value="value1">Значение 1</option>
+                    <option value="value2" selected>Нет</option>
+                    <option value="value1">Значение 3</option>
+                  </select>
+                </div>
+              </div>
+              <p class="selector__price">0 тг/мес</p>
+            </div>
+          </div>
+          <p class="server__note">
+            Все сервера комплектуются 2 блоками и питания и подключаются к
+            независимым линиям электроснабжения
+          </p>
+          <p class="server__price">232 000 <span>тг/мес</span></p>
+        </div>
+        <button class="server__addServer">Добавить сервер</button>
+        <!-- Блок IP -->
+        <div class="ip">
+          <h2>Блок IP-адресов</h2>
+          <div class="ip__info">
+            <div class="ip__item">
+              <div class="selector">
+                <div class="selector__icon">
+                  <img src="./assets/icons/pc.svg" alt="" />
+                </div>
+                <div class="selector__wrapper">
+                  <h3 class="selector__title">Блок IP-адресов</h3>
+                  <div class="Ipmi">
+                    <img src="./assets//icons//questionMark.svg" alt="" />
+                  </div>
+                  <select name="cpu">
+                    <option value="value1">Значение 1</option>
+                    <option value="value2" selected>
+                      Блок из 4 IP-адресов (/30)
+                    </option>
+                    <option value="value1">Значение 3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="ip__subtitle">
+              <img src="./assets//icons//ipv6.svg" alt="" />
+              <p>
+                Мы поддерживаем IPv6 и можем предоставить блок IP-адресов /64
+                бесплатно
+              </p>
+            </div>
+          </div>
+          <p class="ip__price">4 000 <span>тг/мес</span></p>
+        </div>
+        <!-- Блок настроек Фаерволла -->
+        <div class="fireWall">
+          <h2>Фаервол FortiGate</h2>
+          <div class="fireWall__info">
+            <div class="fireWall__item">
+              <div class="selector">
+                <div class="selector__icon">
+                  <img src="./assets/icons/pc.svg" alt="" />
+                </div>
+                <div class="selector__wrapper">
+                  <h3 class="selector__title">Выберите блок</h3>
+                  <div class="Ipmi">
+                    <img src="./assets//icons//questionMark.svg" alt="" />
+                  </div>
+                  <select name="cpu">
+                    <option value="value1">Значение 1</option>
+                    <option value="value2" selected>Не заказывать</option>
+                    <option value="value1">Значение 3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="fireWall__price">0 <span>тг/мес</span></p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "10%";
+        document.getElementById("myNav").style.overflow = "unset";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        document.getElementById("myNav").style.overflow = "hidden";
+      }
+    </script>
+  </body>
+  <footer>
+    <div class="footer">
+      <p class="footer__sign">©2003-2023 «Интернет компания PS»</p>
+      <div class="footer__routes">
+        <ul>
+          <li><a href="#"> Контакты </a></li>
+          <li><a href="#">Правила использования</a></li>
+          <li><a href="#">Публичная оферта</a></li>
+          <li><a href="#">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+      <div class="footer__socials">
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="/assets/icons/footer/facebook.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="/assets/icons/footer//vk.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/assets/icons/footer/twitter.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="/assets/icons/footer/insta.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/assets/icons/footer/telegram.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</html>
